@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Album
+
+# Model Form Field configuration
+form: $/albus/musicbox/models/album/fields.yaml
+
+# Model Class name
+modelClass: Albus\MusicBox\Models\Album
+
+# Default redirect location
+defaultRedirect: albus/musicbox/albums
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: albus/musicbox/albums/update/:id
+    redirectClose: albus/musicbox/albums
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: albus/musicbox/albums
+    redirectClose: albus/musicbox/albums
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

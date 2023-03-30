@@ -1,0 +1,8 @@
+1.0.1: 
+    - First version of MusicBox
+    - create_albums_table.php
+    - create_artists_table.php
+    - create_genres_table.php
+    - create_msses_table.php
+    - create_tracks_table.php
+    - seed_all_tables.php

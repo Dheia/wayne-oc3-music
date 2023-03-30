@@ -1,0 +1,21 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Название
+        span: auto
+
+    slug:
+        label: URL
+        span: auto
+        placeholder: Ссылка
+        preset:
+            field: name
+            type: slug
+
+    icon:
+        label: Иконка
+        type: fileupload
+        span: full 

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Mss
+
+# Model Form Field configuration
+form: $/albus/musicbox/models/mss/fields.yaml
+
+# Model Class name
+modelClass: Albus\MusicBox\Models\Mss
+
+# Default redirect location
+defaultRedirect: albus/musicbox/msses
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: albus/musicbox/msses/update/:id
+    redirectClose: albus/musicbox/msses
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: albus/musicbox/msses
+    redirectClose: albus/musicbox/msses
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

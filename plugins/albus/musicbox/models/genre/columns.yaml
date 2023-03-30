@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+
+    name:
+        label: Имя  
+        searchable: true
+        
+    icon:
+        label: Иконка
+        type: image
+        sortable: false
+        width: 50
+        height: 50
+        options:
+            mode: crop

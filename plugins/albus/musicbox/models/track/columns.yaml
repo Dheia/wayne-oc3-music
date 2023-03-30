@@ -1,0 +1,27 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: Название
+        searchable: true
+
+    artists:
+        label: Исполнители
+        relation: artists
+        select: name
+
+    cover:
+        label: Аватар
+        type: image
+        sortable: false
+        width: 50
+        height: 50
+        options:
+            mode: crop
+
+    status:
+        label: Статус
+        type: selectable
+        sortable: false

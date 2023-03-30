@@ -1,0 +1,115 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    full_title:
+        label: Полное название
+        span: full
+        disabled: true
+
+    title:
+        label: Название
+        span: row
+        spanClass: col-md-6
+
+    slug:
+        label: URL
+        span: row
+        spanClass: col-md-6
+        placeholder: Ссылка
+        preset:
+            field: title
+            type: slug
+
+    artists:
+        label: Исполнители
+        type: partial
+
+    published:
+        label: Опубликован
+        type: switch
+        default: true
+
+    published_at:
+        label: Дата показа
+        type: datepicker
+        default: now
+        span: row
+        spanClass: col-md-3
+
+    # toolbar:
+    #     type: partial
+    #     path: track_toolbar
+    #     cssClass: collapse-visible
+
+    year:
+        label: Год релиза
+        type: number
+        min: 1800
+        span: row
+        spanClass: col-md-3
+
+
+    released_at:
+        label: Дата релиза
+        type: datepicker
+        mode: date
+        span: row
+        spanClass: col-md-3
+
+    genre:
+        label: Жанр
+        type: relation
+        span: row
+        spanClass: col-md-6
+
+    music_file:
+        label: Файл трека
+        span: auto
+        type: fileupload
+        fileTypes: mp3
+
+    cover:
+        label: Обложка
+        mode: image
+        span: auto
+        type: fileupload
+
+    lyrics:
+        type: richeditor
+
+    # mss:
+    #     context: [update, relationcontroller]
+    #     label: Музыкальные сервисы
+    #     # commentAbove: RelationController using a custom pivot model with validation.
+    #     type: partial
+
+    mss:
+        context: [update, relationcontroller]
+        label: Музыкальные сервисы
+        type: partial
+
+    # artists:
+    #     label: Исполинель
+    #     type: relation
+    #     span: row
+    #     spanClass: col-md-6
+
+
+    # artists:
+    #     label: Исполнители
+    #     # commentAbove: RelationController using a custom pivot model with validation.
+    #     type: partial
+
+    # telegram_data:
+    #     label: Telegram
+    #     type: partial
+
+
+
+
+secondaryTabs:
+    fields:
+        # track_data:
+        #     type: partial

@@ -1,0 +1,24 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: Название
+        searchable: true
+    slug:
+        label: Slug
+        searchable: true
+
+    icon:
+        label: Логотип
+        type: image
+        sortable: false
+        width: 50
+        height: 50
+        options:
+            mode: crop
+    # icon: 
+    #     label: Логотип
+    #     type: partial
+    #     path: ~/plugins/albus/musicbox/controllers/msses/_icon.php

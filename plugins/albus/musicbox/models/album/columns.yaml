@@ -1,0 +1,17 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: Имя  
+        searchable: true
+        
+    cover:
+        label: Обложка
+        type: image
+        sortable: false
+        width: 50
+        height: 50
+        options:
+            mode: crop

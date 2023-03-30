@@ -1,0 +1,37 @@
+
+artists:
+    label: Исполнители
+    list: $/albus/musicbox/models/artist/columns.yaml
+    form: $/albus/musicbox/models/artist/fields.yaml
+    # view:
+    #     filter: $/october/test/models/post/scopes.yaml
+    #     showSearch: true
+    manage:
+        showSearch: true
+        recordsPerPage: 10
+    structure:
+        showReorder: true
+        showTree: false
+
+mss:
+    label: Сервис
+    view:
+        list: $/albus/musicbox/models/mss/columns.yaml
+        # toolbarButtons: add|remove|create
+        showSearch: true
+    # manage:
+    #     list: $/october/test/models/role/columns.yaml
+    #     filter: $/october/test/models/role/scopes.yaml
+    #     showCheckboxes: true
+    pivot:
+        form: $/albus/musicbox/models/mss/fields_pivot.yaml
+    structure:
+        showReorder: true
+        showTree: false
+# countries:
+#     label: Country
+#     list: $/october/test/models/country/columns_simple.yaml
+#     form: $/october/test/models/country/fields_simple.yaml
+#     structure:
+#         showReorder: true
+#         showTree: false

@@ -1,0 +1,32 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Название
+        span: auto
+
+    slug:
+        label: URL
+        span: auto
+        placeholder: Ссылка
+        preset:
+            field: name
+            type: slug
+
+    info:
+        label: Год релиза
+        type: richeditor
+        min: 1800
+        span: full
+
+    avatar:
+        label: Аватар
+        span: auto
+        type: fileupload
+
+    cover:
+        label: Обложка
+        span: auto
+        type: fileupload
